@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro Programa</title>
+    <style>
+        body{
+            background-color: rgb(172, 154, 154); 
+            color: rgb(7, 21, 207);       
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: rgb(114, 111, 111);
+        }
+        p {color: black;}
+    </style>
+</head>
+<body>
+    <h1>Numeros</h1> 
+    <p>Primeiros passos de uma calculadora</p>
+    <script>
+      var n1 = Number.parseInt(window.prompt('Digite um número: '))
+      var n2 = Number.parseFloat(window.prompt('Digite seu nome: '))
+      var soma = n1 + n2 //Number.parseInt(n) para mudar string para numero
+      window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`) //Number.parseFloat(n) para passa para número real
+      //(number +  number = soma)
+      //(String + string = Concatenação)
+      //(para mudar numero para string é (String(n)))
+      //TempletString sao esses ${}que ajudam muito a diminuir e organizar o código
+      //s.lenght (quantas caracterers tem a string)
+      //s.toUpperCase(colocar geral maiusc)
+      //s.toLowerCase(colocar geral minusculo)
+    </script>
+</body>
+</html>
