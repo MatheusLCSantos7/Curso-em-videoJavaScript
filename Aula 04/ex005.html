@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando e fazendo aulas</title>
+    <style>
+      body {
+          background-color: darkcyan;
+          color: darkgreen;
+          font:normal 15PT Arial;
+      }
+    </style>
+</head>
+<body>
+    <h1>Estudando DOM</h1>
+    <p> <strong>DOM</strong> é um modelo de objeto para documentos,não funciona no NODE só no navegador</p>
+    <p>tudo dentro do javascript esta dentro do window,e dentro dele temos varios objetos</p>
+    <p>como o Location,documento,history</p>
+    <p>dentro do Documento esta o HTML , oe dentro dele esta o HEAD e o Body,sao child</p>
+    <p>quem esta em baixo é child e quem esta a cima é Parent</p>
+    <p>Hoje estamos treinando conhecimentos e ao memso tempo</p>
+    <p>Trbalhando com DOM</p>
+    <Div>Clique aqui</Div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Esta escrito assim = ' + p1.innerText)
+        window.document.write(document.URL)
+        p1 
+    </script>
+</body>
+</html>
