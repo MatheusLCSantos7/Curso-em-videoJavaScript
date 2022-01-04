@@ -22,12 +22,17 @@
     <p>quem esta em baixo é child e quem esta a cima é Parent</p>
     <p>Hoje estamos treinando conhecimentos e ao memso tempo</p>
     <p>Trbalhando com DOM</p>
-    <Div>Clique aqui</Div>
+    <Div id='msg'>Clique aqui</Div>
     <script>
-        var p1 = window.document.getElementsByTagName('p')[0]
+        var p1 = window.document.getElementsByTagName('p')[1]
         window.document.write('Esta escrito assim = ' + p1.innerText)
-        window.document.write(document.URL)
-        p1 
+        window.document.write(p1.innerText)
+        p1.style.color = 'blue'
+        window.document.write(p1.innerHTML)
+        window.alert(p1.innerText)
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando'
     </script>
 </body>
 </html>
