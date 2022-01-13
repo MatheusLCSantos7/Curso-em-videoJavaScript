@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <h1>Eventos DOM em uma criação de site</h1>
+    <p>Armazenando alguns conhecimentos</p>
+    <style>
+         
+      div#Area {
+          background-color: blue;
+          width: 150px;
+          height: 150px;
+          line-height: 150px;
+          text-align: center;
+      }
+
+      div#sa {
+          background-color: cadetblue;
+
+      }
+    </style>
+</head>
+<body>
+    <div id="Area" onclick="Clicar()" onmouseenter="Entrou()" onmouseout="Saiu()">
+     Interaja
+    </div>
+
+     <p>
+         2 elementos para teste 
+     </p>
+    <div id="sa">
+     Alguns testes 
+    </div>
+    <script>
+        var a = window.document.getElementById('Area')
+        a.addEventListener('click', Clicar)
+        a.addEventListener('mouseenter', Entrou)
+        a.addEventListener('mouseout', Saiu)
+        
+        //da pra fazer tanto o de baixo,quanto o de cima que é a mesma coisa porem mais simplificado
+
+        function Clicar() {
+          a.innerText = 'clicou'
+          a.style.backgroundColor = 'blue'
+        }
+        function Entrou() {
+          a.style.backgroundColor = 'black'
+        }
+        function Saiu() {
+          a.style.backgroundColor = 'blue'
+        }
+        //daqui pra baixo é improviso
+        var SA =window.document.getElementById('sa')
+        SA.style.background = 'green'
+        var nombre = window.prompt('?Cual es su numbre?')
+        window.alert('Bein Vindo ' + nombre)
+    </script>
+</body>
+</html>
