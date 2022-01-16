@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> km por hora
+    <input type="button" value="Verificar" onclick="Caucular()">
+    <div id="res"></div>
+<script>
+
+    var nome = window.prompt('Hi!Wath your name ?')
+    window.alert('Welcome  ' + nome) 
+
+    function Caucular()
+    {
+     var txtv = window.document.getElementById('txtvel')
+     var res = window.document.querySelector('div#res')
+     var vel = Number(txtv.value)
+     res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}km</strong></p>`
+     if (vel > 60)
+       {
+            res.innerHTML = `<p>Sentimos muito porém devido a irresponsabilidade voce foi <strong>MULTADO</strong> ${nome}</p>`
+            window.alert('VOCÊ FOI MUTADO ' + nome)
+       }
+    res.innerHTML += `<p>Dirija com segurança ${nome}</p>`
+    }
+</script>
+</body>
+</html>
