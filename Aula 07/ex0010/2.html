@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Naturalidade</title>
+</head>
+<body>
+    <style>
+        body 
+        {
+        background-color: burlywood;
+        }
+        h1 
+        {
+            background-color: rgb(214, 158, 84);
+            font: normal 13pt arial;
+        }
+    </style>
+
+<h1>Bem vindo ao teste de Naturalidade</h1>
+<div id="res"></div>
+<p>Hoje voce participara de um teste de naturalidade 100 criado a base de HTML5</p>
+<p>Por favor selecione sua naturalidade</p>
+<p><input type="checkbox"  name="pais1" id="pais1" onclick="clicou1()"> Brasil</p>
+<p><input type="checkbox"  name="pais2" id="pais2" onclick="clicou2()"> Estados Unidos</p>
+    <script>
+        function clicou1()
+        {
+        var paisr = window.document.getElementById('pais1')
+        var res = window.document.querySelector('div#res')
+        var resu = (paisr.value)
+        res.innerHTML = `Parabéns!! Você é ${resu} !!`
+        
+        }
+        function Verificar()
+        {
+        var pais = window.document.getElementById('res')
+        }
+        //var nome = window.prompt('Qual seu nome ?')
+        //window.alert('Seja muito bem vindo  ' + nome)
+    </script>
+</body>
+</html>
