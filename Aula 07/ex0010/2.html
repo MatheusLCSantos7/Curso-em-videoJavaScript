@@ -23,23 +23,25 @@
 <div id="res"></div>
 <p>Hoje voce participara de um teste de naturalidade 100 criado a base de HTML5</p>
 <p>Por favor selecione sua naturalidade</p>
-<p><input type="checkbox"  name="pais1" id="pais1" onclick="clicou1()"> Brasil</p>
-<p><input type="checkbox"  name="pais2" id="pais2" onclick="clicou2()"> Estados Unidos</p>
+<p><input type="checkbox"  name="pais1" id="pais1" value="Brasileiro" onclick="clicou1()" oncli> Brasil</p>
+<p><input type="checkbox"  name="pais2" id="pais2" value="Estrangeiro" onclick="clicou2()"> Estados Unidos</p>
     <script>
         function clicou1()
         {
         var paisr = window.document.getElementById('pais1')
         var res = window.document.querySelector('div#res')
-        var resu = (paisr.value)
-        res.innerHTML = `Parabéns!! Você é ${resu} !!`
-        
+        var resu = String(paisr.value)
+        res.innerHTML = `Parabéns!! Você é ${resu} ${nome}!!`     
         }
-        function Verificar()
+        function clicou2()
         {
-        var pais = window.document.getElementById('res')
+        var paisr = window.document.getElementById('pais2')
+        var res = window.document.querySelector('div#res')
+        var resu = String(paisr.value)
+        res.innerHTML = `Parabéns!! Você é ${resu} ${nome}!!!`     
         }
-        //var nome = window.prompt('Qual seu nome ?')
-        //window.alert('Seja muito bem vindo  ' + nome)
+        var nome = window.prompt('Qual seu nome ?')
+        window.alert('Seja muito bem vindo  ' + nome)
     </script>
 </body>
 </html>
