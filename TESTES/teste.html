@@ -27,6 +27,12 @@
 <p><input type="checkbox"  name="pais2" id="pais2" value="0" onclick="clicou()"> Estados Unidos</p>
 <input type="button" value="VERIFICAR" onclick="Verificar()">
     <script>
+        var agora = new Date()
+        var hora = agora.getHours()
+        if (hora <12)
+        {
+            
+        }
         var selecionado = window.document.getElementById('pais1')
         function clicou()
         {
