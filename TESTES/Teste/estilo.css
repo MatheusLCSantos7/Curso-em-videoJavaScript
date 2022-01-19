@@ -1,0 +1,31 @@
+body 
+{
+    background-color: rgb(98, 108, 243);
+    font: normal 15pt arial;
+    }
+
+header 
+{
+    color: white;
+    text-align: center;
+}
+
+section
+{
+    background:white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;   
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
+}
+section#um 
+{
+ background: rgba(255,255,255,0.1);
+ backdrop-filter: blur(10px); /*tentativa de um efeito em vidro q vi no insta*/
+}
+footer 
+{
+    color: white;
+    text-align: center;
+}
