@@ -8,7 +8,7 @@ if (tn1.value.length == 0)
 {
     res.innerHTML = 'Impossível contar'
     window.alert('[ERRO] Digite um número')
-} else {
+}
 
 for(var c = 0;c <=10;c++)
 {
@@ -17,5 +17,5 @@ padrao.appendChild(document.createTextNode((n1.value) * i))
 document.querySelector('ul').appendChild('li')
 
 }
-}
+
 } 
