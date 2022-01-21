@@ -1,0 +1,34 @@
+body 
+{
+    background-image:url('fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    font: normal 15pt arial;
+    
+}
+
+header 
+{
+    font:normal 10pt arial;
+    background-color: rgba(165, 228, 228, 0.445);
+    text-align: center;
+    width: 550px;
+    border-radius: 40px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(111, 240, 240);
+    backdrop-filter: blur(1px);
+    
+}
+
+section
+{
+    background-color:rgba(165, 228, 228, 0.445);
+    text-align: center;
+    width: 500px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 15px;
+    backdrop-filter: blur(12px);
+
+}
